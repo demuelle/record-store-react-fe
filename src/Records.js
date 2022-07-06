@@ -39,11 +39,13 @@ function Records() {
                 return;
             case "edit":
                 setRecords(records.map(r => {
-                    if(r.id === record.id) {
-                        return record;
-                    }
-                    return r;
-                }))
+                                                if(r.id === record.id) {
+                                                    return record;
+                                                }
+                                                return r;
+                                             }
+                                    )
+                            )
                 break;
             case "add":
                 setRecords([...records, record]);
